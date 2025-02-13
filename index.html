@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">MuscleFuel Kitchen</div>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul class="nav-links">
+            
+            <li><a class="explore-menu" onclick="showMenu()">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+<header>
+    <section class="hero">
+        <h1>Welcome to MuscleFuel Kitchen</h1>
+        <p>Order your favorite meal with just a click!</p>
+        <button class="explore-menu" onclick="showMenu()">Explore Menu</button>
+    </section>
+</header>
+   
+   
+    <div class="menu-overlay" id="menuOverlay">
+        <span class="close-btn" onclick="closeMenu()">&times;</span>
+        <img src="menu.png" alt="Menu" class="menu-image">
+    </div>
+
+    <section class="order-form">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="dish">Select Dish:</label>
+                <select id="dish" required>
+                    <option value="Brown Bread Chicken Sandwich">Brown Bread Chicken Sandwich</option>
+                    <option value="Brown Bread Paneer Sandwich">Brown Bread Paneer Sandwich</option>
+                    <option value="Banana Shake">Banana Shake</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <select id="quantity" required>
+                    <option value="Half">120 gm</option>
+                    <option value="Full">100 gm</option>
+                    <option value="Full">50 gm</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" id="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" required></textarea>
+            </div>
+
+            <button type="submit">Send Order</button>
+        </form>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need support, feel free to reach out to us!</p>
+        <div class="contact-container">
+          
+      
+          <div class="contact-info">
+            <h3>Or reach us directly:</h3>
+            <p><strong>Phone 1:</strong> +91 8853066278</p>
+            <p><strong>Phone 2:</strong> +91 7572082633</p>
+            <p><strong>Address:</strong> Near Chaudhry Guest House, Halim College, Chaman Ganj, Kanpur.</p>
+          </div>
+        </div>
+      </section>
+      
+      <footer>
+        <p>&copy; 2025 MuscleFuel Kitchen. All Rights Reserved.</p>
+      
+        <div class="social-media">
+          <a href="https://Instagram.com" target="_blank">Instagram</a>
+          
+        </div>
+      </footer>
+      
+      
+      
+</body>
+</html>
