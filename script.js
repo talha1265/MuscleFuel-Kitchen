@@ -31,7 +31,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
 
     let message = `Order Details:%0AName: ${name}%0AMobile: ${mobile}%0ADish: ${dish}%0AQuantity: ${quantity}%0AAddress: ${address}`;
     
-    let whatsappURL = `https://wa.me/+91 8853066278?text=${message}`;
+    let whatsappURL = `https://wa.me/+91-8853066278?text=${message}`;
     
     window.open(whatsappURL, "_blank");
 });
