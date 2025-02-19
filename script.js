@@ -31,7 +31,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
 
     let message = `Order Details:%0AName: ${name}%0AMobile: ${mobile}%0ADish: ${dish}%0AQuantity: ${quantity}%0AAddress: ${address}`;
     
-    let whatsappURL = `https://wa.me/918853066278?text=${message}`;
-    
-    window.open(whatsappURL, "_blank");
+ let whatsappURL = `intent://send/?phone=918853066278&text=${message}#Intent;scheme=whatsapp;package=com.whatsapp;end;`;
+
+window.location.href = whatsappURL;
 });
